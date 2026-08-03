@@ -280,6 +280,9 @@ OPNsense uses `csh`, not `bash`. Create config files on another machine and SCP 
 ### Files disappear after reboot
 `/tmp/` is tmpfs (RAM). Use `/root/` for persistence, or re-SCP after reboot.
 
+### Warning about secure boot certificate, update skipped
+Certificate check can be skipped with `-AllowMissingCert`, full consequences of using this flag are unknown, but this was successful and necessary on a Protectli device with Coreboot installed.
+
 ---
 
 ## Hardware Tested
