@@ -169,8 +169,8 @@ Look at the `ETrackId` and match it against the BillyCurtis repo:
 | `80000284` | 2.13 | 2MB |
 | `8000028D` | 2.14 | 2MB |
 | `80000290` | 2.14 | **1MB** |
-| `80000308` | 2.17 | 2MB |
-| `80000303` | 2.17 | 1MB |
+| `80000303` | 2.17 | 2MB |
+| `80000308` | 2.17 | 1MB |
 
 **Key insight:** If the 2MB firmware fails with error id=6 but the NIC is otherwise healthy, try the 1MB firmware. You may have mixed flash sizes even within the same machine.
 
@@ -191,7 +191,7 @@ SUBDEVICE: 0000
 NVM IMAGE: FXVL_125C_V_2MB_2.32.bin
 EEPID: 80000422
 RESET TYPE: REBOOT
-REPLACES: 8000028D 80000284 80000308 80000371
+REPLACES: 8000028D 80000284 80000303 80000371
 END DEVICE
 ```
 
@@ -210,7 +210,7 @@ SUBDEVICE: 0000
 NVM IMAGE: FXVL_125C_V_1MB_2.32.bin
 EEPID: 80000425
 RESET TYPE: REBOOT
-REPLACES: 80000290 80000303 8000039D
+REPLACES: 80000290 80000308 8000039D
 END DEVICE
 ```
 
